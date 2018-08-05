@@ -1,0 +1,145 @@
+
+header{
+  color:white;
+	background-color:#5b7989;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+
+}
+
+.titulo{
+  text-align: center;
+  text-shadow:0 0 2px #02010a;
+	width: 100%;
+  padding: 2px;
+}
+.menu-principal{
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+
+.imagen-central{
+	background-color: #82c3a6;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+}
+.imagen-secundaria-izquierda {
+	background-color: #d5c75f;
+	text-align: center;
+	border: 1px solid white;
+	width: 50%;
+	padding: 10px;
+}
+.imagen-secundaria-derecha{
+	background-color: #d5c75f;
+	text-align: center;
+	border: 1px solid white;
+	width: 50%;
+	padding: 10px;
+}
+
+.imagen-secundaria-izquierda img:hover{
+	animation-name: imagen1-animacion;
+	animation-duration: 1s;
+}
+.imagen-secundaria-derecha img:hover{
+	animation-name: imagen2-animacion;
+	animation-duration: 1s;
+}
+
+@keyframes imagen1-animacion {
+from {
+}
+to {
+transform: rotate(10deg);
+box-shadow: 2px 2px #82c3a6;
+}
+}
+
+@keyframes imagen2-animacion {
+from {
+}
+to {
+transform: translatey(5px);
+transform: translatex(20px);
+box-shadow: 2px 2px  #82c3a6;
+}
+}
+
+body {
+	background-color: #02010a;
+  font-family: Dancing Script;
+}
+img{
+	width: 100%;
+	box-shadow: 2px 2px  #02010a;
+}
+footer {
+	padding: 10px;
+	text-align: center;
+	background-color:  #C6d5c5;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius: 10px;
+}
+
+#contenido {
+width: 100%;
+padding:10px;
+animation-name: imagen3-animacion;
+animation-duration: 2s;
+}
+.imagen-central, .imagen-secundaria-derecha, .imagen-secundaria-izquierda {
+width: 100%;
+}
+.columna{
+	width: 100%
+}
+@media (min-width:900px){
+	#contenido{
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contenedor {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.img1 img{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+.img2 img{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+.img4 img{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+.img6 img{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+.img3 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+@keyframes imagen3-animacion {
+0% {
+position: relative;
+margin-top: 150%
+}
+60% {
+position: relative;
+margin-top: -5%;
+}
+100% {
+position: relative;
+margin-top: 0%;
+}
+}
